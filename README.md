@@ -1,2 +1,2 @@
 # dct
-dct performs forward and inverse discrete cosine fourier transforms.
+dct performs forward and inverse discrete cosine transforms.
