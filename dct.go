@@ -1,4 +1,4 @@
-// Package dct implements forward and reverse discrete cosine fourier transforms.
+// Package dct implements forward and reverse discrete cosine transforms.
 // The algorithm is based on the information at:
 // https://www.mathworks.com/help/images/ref/dct2.html and
 // https://www.mathworks.com/help/images/ref/idct2.html.
