@@ -11,10 +11,10 @@ import (
 	"gonum.org/v1/gonum/mat"
 )
 
-// FDCT computes the forward discrete cosine transform of src and places it in dst,
+// F computes the forward discrete cosine transform of src and places it in dst,
 // also returning dst.
 // If dst is nil, a new matrix is allocated and returned.
-func FDCT(src, dst *mat.Dense) *mat.Dense {
+func F(src, dst *mat.Dense) *mat.Dense {
 	r, c := src.Dims()
 	if r%2 != 0 || c%2 != 0 {
 		panic(fmt.Errorf("dct: matrix dimensions must be even"))
@@ -52,10 +52,10 @@ func FDCT(src, dst *mat.Dense) *mat.Dense {
 	return dst
 }
 
-// IDCT computes the inverse discrete cosine transform of src and places it in dst,
+// I computes the inverse discrete cosine transform of src and places it in dst,
 // also returning dst.
 // If dst is nil, a new matrix is allocated and returned.
-func IDCT(src, dst *mat.Dense) *mat.Dense {
+func I(src, dst *mat.Dense) *mat.Dense {
 	r, c := src.Dims()
 	if r%2 != 0 || c%2 != 0 {
 		panic(fmt.Errorf("dct: matrix dimensions must be even"))

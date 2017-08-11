@@ -17,8 +17,8 @@ func TestDCT(t *testing.T) {
 	}
 	for i, x := range tests {
 		t.Run(fmt.Sprintf("%d", i), func(t *testing.T) {
-			dct := FDCT(x, nil)
-			x2 := IDCT(dct, nil)
+			dct := F(x, nil)
+			x2 := I(dct, nil)
 			r, c := x.Dims()
 			for i := 0; i < r; i++ {
 				for j := 0; j < c; j++ {
